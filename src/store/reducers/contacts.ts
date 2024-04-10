@@ -11,18 +11,21 @@ const initialState: ContactState = {
     {
       id: 1,
       name: 'Eduardo silva',
+      email: 'eduardosila@outlook.com.br',
       phone: 11985742356,
       local: enums.Places.LIFE
     },
     {
       id: 2,
       name: 'Enzo silva',
+      email: 'enzinhogamer@gmail.com',
       phone: 1195687412,
       local: enums.Places.LIFE
     },
     {
       id: 3,
       name: 'Vitor Jara',
+      email: 'jaradesenhos@yahoo.com.br',
       phone: 11985125874,
       local: enums.Places.LIFE
     }
@@ -35,15 +38,6 @@ const contactSlice = createSlice({
   reducers: {
     remove: (state, action: PayloadAction<number>) => {
       state.itens = state.itens.filter((t) => t.id === action.payload)
-    },
-    edit: (state, action: PayloadAction<Contact>) => {
-      const indexContact = state.itens.findIndex(
-        (u) => u.id === action.payload.id
-      )
-
-      if (indexContact >= 0) {
-        state.itens[indexContact] = action.payload
-      }
     },
     register: (state, action: PayloadAction<Omit<Contact, 'id'>>) => {
       const contactIE = state.itens.find(
@@ -66,5 +60,5 @@ const contactSlice = createSlice({
   }
 })
 
-export const { edit, register, remove } = contactSlice.actions
+export const { register, remove } = contactSlice.actions
 export default contactSlice.reducer

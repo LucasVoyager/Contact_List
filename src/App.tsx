@@ -1,10 +1,20 @@
-import React from 'react'
+import { Provider } from 'react-redux'
+
+import GlobalStyleP, { Container } from './styles'
+
+import store from './store'
+import Forms from './containers/Forms'
+import ContactList from './containers/ContactList'
 
 function App() {
   return (
-    <div>
-      <h1>Hello app react</h1>
-    </div>
+    <Provider store={store}>
+      <GlobalStyleP />
+      <Container>
+        <Forms />
+        <ContactList />
+      </Container>
+    </Provider>
   )
 }
 

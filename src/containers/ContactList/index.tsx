@@ -1,6 +1,6 @@
 const ContactList = () => (
   <>
-    <p>Nome, Telefone e tipo</p>
+    <p>Nome, email, Telefone e tipo</p>
   </>
 )
 
