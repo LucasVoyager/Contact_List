@@ -7,7 +7,7 @@ import { Buttons } from '../../styles'
 
 type Props = ContactCLass
 
-const Contact = ({ name, local, email, phone, id }: Props) => {
+const ContactCP = ({ name, local, email, phone, id }: Props) => {
   const dispatch = useDispatch()
 
   return (
@@ -21,4 +21,4 @@ const Contact = ({ name, local, email, phone, id }: Props) => {
   )
 }
 
-export default Contact
+export default ContactCP
