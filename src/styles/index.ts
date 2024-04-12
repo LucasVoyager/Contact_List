@@ -1,4 +1,5 @@
 import { createGlobalStyle, styled } from 'styled-components'
+import variables from './variables'
 
 const GlobalStyleP = createGlobalStyle`
   *{
@@ -31,4 +32,11 @@ export const ContainerCL = styled.main`
   height: 100vh;
   overflow-y: scroll;
   background-color: #353b48;
+`
+
+export const CardDiv = styled.div`
+  background-color: ${variables.cardBack};
+  border-radius: 16px;
+  height: 25vh;
+  margin-bottom: 32px;
 `
