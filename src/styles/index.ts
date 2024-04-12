@@ -11,7 +11,8 @@ const GlobalStyleP = createGlobalStyle`
 `
 
 export const Container = styled.div`
-  display: block;
+  display: grid;
+  grid-template-columns: 224px auto;
 `
 export default GlobalStyleP
 
@@ -23,4 +24,11 @@ export const Buttons = styled.button`
   border: none;
   cursor: pointer;
   border-radius: 8px;
+`
+
+export const ContainerCL = styled.main`
+  padding: 0 40px;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #353b48;
 `

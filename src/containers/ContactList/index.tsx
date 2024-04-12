@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import ContactCP from '../../components/Contact'
-import { Container } from '../../styles'
+import { ContainerCL } from '../../styles'
 import { RootReducer } from '../../store'
 
 const ContactList = () => {
@@ -22,7 +22,7 @@ const ContactList = () => {
   const contacts = filterContact()
 
   return (
-    <Container>
+    <ContainerCL>
       <ul>
         {contacts?.map((c) => (
           <li key={c.name}>
@@ -36,7 +36,7 @@ const ContactList = () => {
           </li>
         ))}
       </ul>
-    </Container>
+    </ContainerCL>
   )
 }
 

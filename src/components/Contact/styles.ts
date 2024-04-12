@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const ContactCd = styled.div`
   background-color: #fcfcfc;
   padding: 16px;
+  margin-top: 16px;
   margin-bottom: 32px;
   border-radius: 16px;
 `
