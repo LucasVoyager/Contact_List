@@ -7,7 +7,7 @@ import { Buttons } from '../../styles'
 
 type Props = ContactCLass
 
-const ContactCP = ({ name, local, email, phone, id }: Props) => {
+const ContactCP = ({ name, email, phone, id }: Props) => {
   const dispatch = useDispatch()
 
   return (
@@ -15,7 +15,6 @@ const ContactCP = ({ name, local, email, phone, id }: Props) => {
       <S.Name>{name}</S.Name>
       <S.EmailNumber>{phone}</S.EmailNumber>
       <S.EmailNumber>{email}</S.EmailNumber>
-      <S.Local>{local}</S.Local>
       <Buttons onClick={() => dispatch(remove(id))}>Remover</Buttons>
     </S.ContactCd>
   )

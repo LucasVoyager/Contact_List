@@ -11,7 +11,7 @@ export const ContactCd = styled.div`
 export const Name = styled.h3`
   font-size: 12px;
   font-weight: bold;
-  margin-left: 8px;
+  margin-bottom: 4px;
 `
 
 export const EmailNumber = styled.p`

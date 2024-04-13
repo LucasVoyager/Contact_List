@@ -20,11 +20,12 @@ export default GlobalStyleP
 export const Buttons = styled.button`
   font-size: 8px;
   font-weight: bold;
-  color: #fff;
+  color: ${variables.picoVoid};
   padding: 8px 12px;
   border: none;
   cursor: pointer;
   border-radius: 8px;
+  margin-top: 8px;
 `
 
 export const ContainerCL = styled.main`

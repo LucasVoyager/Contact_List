@@ -31,7 +31,6 @@ const ContactList = () => {
               name={c.name}
               phone={c.phone}
               email={c.email}
-              local={c.local}
             />
           </li>
         ))}
